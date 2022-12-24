@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Info() {
   return (
-    <div> <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
+    <div> <ul class="max-w-md divide-y divide-gray-200 ">
     <li class="pb-3 sm:pb-4">
       <div class="flex items-center space-x-4">
         <div class="flex-shrink-0">
