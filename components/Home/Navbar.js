@@ -1,6 +1,7 @@
-import Image from "next/image";
+
 import Link from "next/link";
-import Banner from "../../public/img/banner.png";
+
+
 
 export default function Navbar() {
   return (
@@ -16,9 +17,9 @@ export default function Navbar() {
           <div className="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
               <li>
-                <a className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent m md:p-0">
+                <Link  href="/about"className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent m md:p-0">
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -29,12 +30,12 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  href="/seek_investment"
                   className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >
                   Seek Investment
-                </a>
+                </Link>
               </li>
               <li>
                 <a
@@ -90,16 +91,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className="absolute p-32 text-white w-1/2">
-        <h1>INVESTOR</h1>
-        <p>
-          Find investment opportunies, and invest in potential businesses right
-          from your fingertips.
-        </p>
-        <button class="rounded-full bg-sky-700">Join the platform</button>
-      </div>
-
-      <Image src={Banner} alt="Banner" className="h-56" />
+    
     </>
   );
 }

@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Grid from "../components/Home/Grid";
 import Jumbotron from "../components/Home/Jumbotron";
-import Navbar from "../components/Home/Navbar";
+import Picbg from "../components/Home/picbg";
+
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
+        <Picbg />
         <Jumbotron />
         <Grid />
       </main>
