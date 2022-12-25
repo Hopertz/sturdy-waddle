@@ -5,7 +5,7 @@ const sectorSVG = () => {
       height="28"
       viewBox="0 0 31 28"
       fill="none"
-      class="bg-blue-500 text-blue-800"
+      className="bg-blue-500 text-blue-800"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -58,7 +58,7 @@ const regionSVG = () => {
 };
 export default function SectorRegion() {
   return (
-    <div className="flex space-x-8 bg-slate-200 rounded-xl">
+    <div className="flex flex-col md:flex-row space-x-8 bg-slate-200 rounded-xl">
       <button className="ml-4 flex items-center bg-blue-600 text-white rounded-xl px-6 py-2 my-2">
         <span className="mr-2">{sectorSVG()}</span>By Sector
       </button>
