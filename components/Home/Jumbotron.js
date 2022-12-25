@@ -30,18 +30,18 @@ const TZFlag = () => {
 export default function Jumbotron() {
   return (
     <>
-      <div class="grid place-items-center bg-slate-200 h-20">
-        <div className="flex justify-between w-3/5">
-          <h1 className="self-end uppercase font-semibold">Invest Now</h1>
+      <div className="grid place-items-center bg-slate-200 h-20">
+        <div className="flex flex-col md:flex-row justify-between w-3/5">
+          <h1 className="md:self-end uppercase font-semibold">Invest Now</h1>
           <div className="flex">
             <button className="flex items-center border border-gray-800 rounded-l-xl px-4 py-2">
-              <span className="mr-2">{TZFlag()}</span>Tanzania
+              <span className="mr-2 w-1 h-1 md:h-auto md:w-auto">{TZFlag()}</span>Tanzania
             </button>
             <button className="border border-gray-800 rounded-r-xl px-4 py-2">
               All Countries
             </button>
           </div>
-          <h1 className="self-end uppercase font-semibold ">Seek Investment</h1>
+          <h1 className="md:self-end uppercase font-semibold ">Seek Investment</h1>
         </div>
       </div>
     </>

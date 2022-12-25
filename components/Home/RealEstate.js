@@ -17,9 +17,11 @@ function RealEstate(props) {
         tempus consectetur risus.
       </p>
 
-      <button className="border-blue-600 text-blue-600 capitalize rounded-xl px-6 py-2 my-2">
-       learn more
-      </button>
+      <div className="flex justify-end w-4/5">
+        <button className="border border-blue-600 text-blue-600 capitalize rounded-3xl px-6 py-2 my-2">
+          learn more
+        </button>
+      </div>
     </div>
   );
 }
